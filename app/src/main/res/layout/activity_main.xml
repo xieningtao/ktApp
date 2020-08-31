@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/corutine_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi WithContext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/corutine_async"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi Async"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/corutine_with"
+            />
+
+        <Button
+            android:id="@+id/corutine_async_await"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi Async Await"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/corutine_async"
+            />
+
+        <Button
+            android:id="@+id/corutine_async_all_await"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi Async All Await"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/corutine_async_await"
+            />
+
+        <Button
+            android:id="@+id/corutine_launch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi Launch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/corutine_async_all_await"
+            />
+
+        <Button
+            android:id="@+id/corutine_async_with_suspend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="协程并发 - multi Async With Suspend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/corutine_async_all_await"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
